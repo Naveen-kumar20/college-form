@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>University form</title>
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<link rel="icon" href="icon.jpg">
+	<style>
+		@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@100&display=swap');
+		*{
+			margin: 0px;
+		}
+		body{
+			font-family: Sans-serif;
+		}
+		header{
+			background-color: #f5f6fa;
+		}
+		nav{
+			float: right;
+			margin-top: 23px;
+		}
+		nav a{
+			margin-right: 20px;
+			border: 1.4px solid #192a56;
+			border-radius: 20px;
+			padding-left: 20px;
+			padding-right: 20px;
+			padding-top: 10px;
+			padding-bottom: 10px;
+			text-decoration: none;
+			color: #1B449D;
+			transition: .5s;
+		}
+		nav a:hover{
+			background-color: #1B449D;
+			color: white;
+		}
+		.personal_label{
+			padding: 20px;
+			background-color: #f1f2f6; 
+		}
+
+		.btn{
+			background-color: white;
+			color: #1B449D;
+			border: 1px solid #1B449D;
+			text-align: center;
+			padding: 8px 35px;
+			border-radius: 3px;
+			transition: .5s;
+		}
+		.btn:hover{
+			color: white;
+			background-color: #1B449D;
+			cursor: pointer;
+			transform: scale(1.2);
+
+		}
+	</style>
+</head>
+<body>
+	<header>
+		<img src="logo.png" width="150px" style="margin-left: 7px;">
+		<nav>
+			<a href="#Home">Home</a>
+			<a href="#contact">contact us</a>
+		</nav>
+	</header>
+	<h1 style="font-family: 'IBM Plex Sans', sans-serif; font-size: 4.5vw; margin-left: 10px; margin-top: 8px;">Student registration form
+	</h1>
+	<form action="thank_you.htm">
+		<fieldset class="personal_label" style="margin: 2vw; font-size: 1e;m background-color: #f1f2f6;">
+			<legend style="text-align: center;"><b>Fill out this:</b></legend>
+			
+			<label for="fname" class="Personal_label">First name:</label>
+			<input type="text" id="fname" name="fname" required>
+			
+			<label for="lname" style="padding-left: 50px;">Last name:</label>
+			<input type="text" id="lname" name="lname" required>
+			
+			<label style="padding-left: 50px;">Gender:</label>
+			
+			<input type="radio" id="male" name="Gender" value="male">
+			<label for="male">Male</label>
+			
+			<input type="radio" id="female" name="Gender" value="female">
+			<label for="female">Female</label>
+			
+			<input type="radio" id="other" name="Gender" value="other">
+			<label for="other">Other</label><br><br>
+			
+			<label>Mobile no. :</label>
+			<input type="tel" name="code" value="+91" size="1" maxlength="3" disabled style="cursor: not-allowed;">
+			<input type="tel" name="Mobile" minlength="10" maxlength="10" required>
+
+			<label style="padding-left: 50px;">Upload your photo</label>
+			<input type="file" name="photo" >
+
+			<label>pick a color:</label>
+			<input type="color" name="color">
+
+			<label>What's your DOB?</label>
+			<input type="date" name="DOB" required>
+
+
+		
+		</fieldset>
+		<div style="margin-left:40%">
+			<input type="submit" name="submit" class="btn">
+			<input type="reset" name="reset" class="btn" style="margin-left: 20px;">
+		</div>
+	</form>
+
+
+</body>
+</html>
